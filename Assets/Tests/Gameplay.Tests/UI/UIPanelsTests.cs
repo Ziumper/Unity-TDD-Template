@@ -2,13 +2,13 @@ using NUnit.Framework;
 using System.Collections;
 using UnityEngine.TestTools;
 
-namespace Gameplay.Tests.PlayMode
+namespace Gameplay.Tests.UI
 {
-    public class GameplayPlayModeTests
+    public class UIPanelsTests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void GameplayPlayModeTestsSimplePasses()
+        public void UIPanelsTestsSimplePasses()
         {
             // Use the Assert class to test conditions
         }
@@ -16,7 +16,7 @@ namespace Gameplay.Tests.PlayMode
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
         [UnityTest]
-        public IEnumerator GameplayPlayModeTestsWithEnumeratorPasses()
+        public IEnumerator UIPanelsTestsWithEnumeratorPasses()
         {
             // Use the Assert class to test conditions.
             // Use yield to skip a frame.
@@ -25,4 +25,3 @@ namespace Gameplay.Tests.PlayMode
     }
 
 }
-

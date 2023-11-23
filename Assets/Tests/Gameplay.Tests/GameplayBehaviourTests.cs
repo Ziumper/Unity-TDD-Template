@@ -1,25 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEngine;
+using System.Collections;
 using UnityEngine.TestTools;
 
-public class GameplayBehaviourTests
+namespace Gameplay.Tests
 {
-    // A Test behaves as an ordinary method
-    [Test]
-    public void GameplayBehaviourTestsSimplePasses()
+    public class GameplayBehaviourTests
     {
-        // Use the Assert class to test conditions
+        // A Test behaves as an ordinary method
+        [Test]
+        public void GameplayBehaviourTestsSimplePasses()
+        {
+            // Use the Assert class to test conditions
+        }
+
+        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
+        // `yield return null;` to skip a frame.
+        [UnityTest]
+        public IEnumerator GameplayBehaviourTestsWithEnumeratorPasses()
+        {
+            // Use the Assert class to test conditions.
+            // Use yield to skip a frame.
+            yield return null;
+        }
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator GameplayBehaviourTestsWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
 }
+
